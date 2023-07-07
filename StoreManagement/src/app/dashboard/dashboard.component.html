@@ -1,0 +1,52 @@
+<!-- <div class="content">
+    <div class="card">  
+        <span class="heading">Welcome {{username}}</span> 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">productId</th>
+                    <th scope="col">productName</th>
+                    <th scope="col">quantityAvailable</th>
+                    <th scope="col">cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.productId}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.quantityAvailable}}</td>
+                    <td>{{product.cost}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+ </div> -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spices</title>
+ </head>
+ <body>
+    <section id="home">
+        <span style="color:white;font-size: 30px;font-weight: bold;">Welcome {{username}} !!!</span>
+        <h3 class="text-center">Fresh Delights for Every Bite!</h3>
+        <p>Quality Products at Affordable Prices</p>
+        <br>
+        <!-- <p>Subscribe to our Newsletter!...</p> -->
+            
+        <div class="input-group m-4">
+            <input type="email" class="form-control" [(ngModel)]="email" placeholder="Email Address">
+            <button class="btn signin" type="submit" (click)="subscribe()">Subscribe</button>    
+        </div>
+        
+    </section>
+ </body>
+ </html>
+
+
+
+ 

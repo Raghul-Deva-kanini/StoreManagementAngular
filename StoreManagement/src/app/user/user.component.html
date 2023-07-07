@@ -1,0 +1,64 @@
+<!-- <div class="content">
+    <div class="card">  
+        <span class="heading" *ngIf="status">{{status.message}}</span> 
+    </div>
+ </div> -->
+
+ <!-- User Page -->
+
+ <section id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="../../assets/Image/super_sale.jpg" width="700" height="300" style="padding: 10px;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2">
+                <h1>About Us</h1>
+                <p>At our grocery store, we pride ourselves on offering a wide selection of high-quality products and exceptional customer service. With over 10 of experience in the industry, we have become a trusted destination for all your grocery needs. We source our products from reliable suppliers, ensuring that you get the freshest and finest items on our shelves. From fresh produce to pantry staples, we prioritize quality in every aspect. Our store boasts an extensive range of products to cater to diverse tastes and preferences, including organic, gluten-free, and international specialties.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <div class="table_wrap">
+                <table class="table table-light table-bordered w-100 rounded-top">
+                    <thead>
+                        <tr>
+                            <th class="text-primary" scope="col">PRODUCT ID</th>
+                            <th class="text-primary" scope="col">PRODUCT NAME</th>
+                            <th class="text-primary" scope="col">QUANTITY AVAILABLE</th>
+                            <th class="text-primary" scope="col">COST</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of products">
+                            <!-- <td>{{product.productId}}</td> -->
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/avatars/{{product.quantityAvailable}}.jpg"
+                                        alt=""
+                                        style="width: 45px; height: 45px"
+                                        class="rounded-circle"
+                                        />
+                                    <div class="ms-3">
+                                      <!-- <p class="fw-bold mb-1">John Doe</p>
+                                      <p class="text-muted mb-0">john.doe@gmail.com</p> -->
+                                      <p class="fw-bold mb-1" style="color:black">{{product.productId}}</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>{{product.productName}}</td>
+                            <td>{{product.quantityAvailable}}</td>
+                            <td>Rs. {{product.cost}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+        </div>
+    </div>
+
+    
+ </section>

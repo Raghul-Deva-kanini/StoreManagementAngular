@@ -1,0 +1,21 @@
+#about
+{
+    background: rgb(113,63,251);
+    
+}
+
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: white;;
+}
+
+#about p
+{
+    color: white;;
+}
+
+.row
+{
+    justify-content: space-evenly;
+}

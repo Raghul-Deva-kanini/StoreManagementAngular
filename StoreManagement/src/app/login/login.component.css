@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.form-container{
+    /* background-color: #000; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: space-evenly; 
+}
+.form{
+    width: 400px;
+    height: 330px;
+    /* background-color: #15172b; */
+    background-color: white;
+    padding: 20px;
+    display: table;  /*I need to remember it*/
+}
+
+.login{
+    margin-top: 150px;
+}
+
+
+
+.form.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form.login img {
+    display: block;
+    margin: 0 auto;
+  }
+
+.signup{
+    margin-top:30px
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top:5px;
+    /* color: #eee; */
+    background: linear-gradient(to right, rgba(113,63,251,1) 0%, rgba(252,70,107,1) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+.input
+{
+    font-size: 14px;
+    height: 100%;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px grey;
+}
+
+.input-container 
+{
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid grey;
+}
+
+
+
+
+button
+{
+    border:0;
+    background: rgb(113,63,251);
+    background: linear-gradient(90deg, rgba(113,63,251,1) 0%, rgba(252,70,107,1) 100%);
+    box-sizing: border-box;
+    color:#eee;
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    width:100%;
+    border-radius: 20px;
+}
+
+button:hover{
+   color:  white;
+   cursor: pointer;
+   box-shadow: 0 0 10px rgba(91, 208, 224, 0.764);
+}
+
+.msg{
+    padding-top:10px;
+    font-size: 15px;
+}
+
+
+.error{ color: rgb(216, 5, 5);}
+.success{ color:rgb(0, 54, 0);}
+.light{ color:white;}
+
+.link{
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(113,63,251,1) 0%, rgba(252,70,107,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    display: block;
+}
+.link:hover{
+    color:aquamarine;   
+}
+
+#uname {
+    display: inline-block;
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    top: 370px;
+    right: 380px;
+  }
+
+#passwd
+{
+    display: inline-block;
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    top: 435px;
+    right: 380px;
+}
